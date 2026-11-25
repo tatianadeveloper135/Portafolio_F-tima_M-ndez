@@ -5,12 +5,14 @@ export type Language = "es" | "en";
 export const UI_TEXT = {
   es: {
     nav: {
+        
       inicio: "Inicio",
       sobreMi: "Sobre mí",
       experiencia: "Experiencia",
       proyectos: "Proyectos",
       habilidades: "Habilidades",
       formacion: "Formación",
+      historia: "Historia",
       contacto: "Contacto",
     },
     hero: {
@@ -305,7 +307,7 @@ export const UI_TEXT = {
           title: "Space Camp — Campamento Avanzado (~1 semana)",
           period: "Experiencia Internacional",
           details:
-            "Campamento avanzado de aproximadamente una semana en el Rocket Center en Huntsville, Alabama, desarrollando trabajo en equipo, liderazgo, resolución de retos y habilidades STEM. Más información disponible en las redes de ¡Supérate! y del campamento.",
+            "Campamento avanzado de aproximadamente una semana en el Rocket Center en Huntsville, Alabama, desarrollando trabajo en equipo, liderazgo, resolución de retos y habilidades STEM.",
           referenceUrl: "#pegar-enlace-space-camp",
           referenceLabel: "Ver referencia / redes",
         },
@@ -390,6 +392,7 @@ export const UI_TEXT = {
       proyectos: "Projects",
       habilidades: "Skills",
       formacion: "Education",
+      historia: "Story",
       contacto: "Contact",
     },
     hero: {
@@ -683,7 +686,7 @@ export const UI_TEXT = {
           title: "Space Camp — Advanced Camp (~1 week)",
           period: "International Experience",
           details:
-            "Approximately one-week advanced camp at the Rocket Center in Huntsville, Alabama, developing teamwork, leadership, problem solving, and STEM skills. More details available on ¡Supérate! and camp social channels.",
+            "Approximately one-week advanced camp at the Rocket Center in Huntsville, Alabama, developing teamwork, leadership, problem solving, and STEM skills.",
           referenceUrl: "#pegar-enlace-space-camp",
           referenceLabel: "View reference / social channels",
         },
