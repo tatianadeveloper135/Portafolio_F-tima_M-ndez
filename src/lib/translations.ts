@@ -1,4 +1,4 @@
-import { ExperienceItem, EducationItem, ProjectCategory, ProjectItem, SkillGroup } from "@/types";
+import { ExperienceItem, MediaStoryItem, EducationItem, ProjectCategory, ProjectItem, SkillGroup } from "@/types";
 
 export type Language = "es" | "en";
 
