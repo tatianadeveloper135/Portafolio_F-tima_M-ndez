@@ -24,6 +24,7 @@ export const UI_TEXT = {
       ctaContact: "Contacto",
       github: "GitHub",
       linkedin: "LinkedIn",
+      uploadPhotoPrefix: "Coloca tu foto en",
     },
     about: {
       kicker: "01 · Identidad",
