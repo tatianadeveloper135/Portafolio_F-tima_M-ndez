@@ -148,7 +148,7 @@ export const UI_TEXT = {
             { label: "Control", value: "Rango máx." },
           ],
           imagePath: "/images/evidencia-regresion.png",
-          repoOrColabUrl: "#pegar-enlace-colab-regresion",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1WGbx73QgasdPT131Pd3wNyGoqukSnzKi?usp=sharing",
         },
         {
           id: "laberinto-python",
