@@ -78,8 +78,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: "Split", value: "75% / 25%" },
       { label: "k probados", value: "7 valores" },
     ],
-    imagePath: "/images/evidencia-ai-challenge.png",
-    repoOrColabUrl: "#pegar-enlace-colab-ai-challenge",
+    imagePath: "/images/proyecto-ai-challenge.png",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1E94ffS0F_Yeb0CLS9VVUqWjbCZSgeSxx",
   },
   {
     id: "hotspots-comerciales",
@@ -104,8 +104,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: "Enfoque", value: "Hotspots" },
       { label: "Evidencia", value: "Código + Mapas" },
     ],
-    imagePath: "/images/evidencia-hotspots.png",
-    repoOrColabUrl: "#pegar-enlace-colab-hotspots",
+    imagePath: "/images/proyecto-hotspots.png",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1tVeElRUTjO-MpEzsCqt_BMwLxry2loB2?usp=sharing",
   },
   {
     id: "desarrollo-app-backend",

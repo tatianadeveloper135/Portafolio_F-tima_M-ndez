@@ -11,8 +11,8 @@ export interface ProjectItem {
   results: string[];
   metrics?: { label: string; value: string }[];
   codeSnippet?: string;
-  imagePlaceholder: string; // Reemplaza luego con "/images/nombre-captura.png"
-  repoOrColabUrl: string;   // Reemplaza luego con tu enlace real de Colab o GitHub
+  imagePlaceholder: string;
+  repoOrColabUrl: string;
   isMandatoryCourseActivity?: boolean;
 }
 
@@ -24,10 +24,10 @@ export const personalInfo = {
     "Transformando curiosidad, lógica y propósito en soluciones tecnológicas con impacto real.",
   location: "Santa Tecla, La Libertad, El Salvador",
   email: "fatima09mata@gmail.com",
-  avatarUrl: "/images/avatar-fatima.jpg", // Coloca tu foto en public/images/avatar-fatima.jpg
-  githubUrl: "https://github.com/TU-USUARIO-GITHUB", // Reemplazar con tu enlace
-  linkedinUrl: "https://linkedin.com/in/TU-USUARIO-LINKEDIN", // Reemplazar con tu enlace
-  portfolioRepoUrl: "https://github.com/TU-USUARIO-GITHUB/portafolio-fatima-mendez",
+  avatarUrl: "/images/avatar-fatima.jpeg",
+  githubUrl: "https://github.com/tatianadeveloper135",
+  linkedinUrl: "https://linkedin.com", // Reemplazar con tu enlace
+  portfolioRepoUrl: "https://github.com/tatianadeveloper135/Portafolio_F-tima_M-ndez",
 };
 
 export const aboutData = {
@@ -135,8 +135,8 @@ export const projectsData: ProjectItem[] = [
 else:
     prediccion = modelo.predict([[horas_usuario]])[0]
     print(f"Score estimado: {prediccion:.2f}")`,
-    imagePlaceholder: "/images/proyecto-regresion.png",
-    repoOrColabUrl: "#agregar-enlace-colab-regresion",
+    imagePlaceholder: "/images/evidencia-regresion.jpeg",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1WGbx73QgasdPT131Pd3wNyGoqukSnzKi?usp=sharing",
     isMandatoryCourseActivity: true,
   },
   {
@@ -192,7 +192,7 @@ else:
       { label: "Valores de k", value: "1, 3, 5, 7, 11, 15, 21" },
     ],
     imagePlaceholder: "/images/proyecto-ai-challenge.png",
-    repoOrColabUrl: "#agregar-enlace-colab-ai-challenge",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1E94ffS0F_Yeb0CLS9VVUqWjbCZSgeSxx?usp=sharing",
     isMandatoryCourseActivity: true,
   },
   {
@@ -220,7 +220,7 @@ else:
       { label: "Visualización", value: "Mapa Folium HTML" },
     ],
     imagePlaceholder: "/images/proyecto-hotspots.png",
-    repoOrColabUrl: "#agregar-enlace-colab-hotspots",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1tVeElRUTjO-MpEzsCqt_BMwLxry2loB2?usp=sharing",
     isMandatoryCourseActivity: true,
   },
   {
