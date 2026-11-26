@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-interface ContactBody {
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+interface ContactPayload {
   name?: string;
   email?: string;
   message?: string;
@@ -8,22 +11,23 @@ interface ContactBody {
 
 export async function POST(request: Request) {
   try {
-    const data: ContactBody = await request.json();
-    const name = data.name?.trim() ?? "";
-    const email = data.email?.trim() ?? "";
-    const message = data.message?.trim() ?? "";
+    const body: ContactPayload = await request.json();
+
+    const name = body.name?.trim() ?? "";
+    const email = body.email?.trim() ?? "";
+    const message = body.message?.trim() ?? "";
 
     if (name.length < 2 || name.length > 80) {
       return NextResponse.json(
-        { ok: false, error: "Ingresa un nombre válido (2 a 80 caracteres)." },
+        { ok: false, error: "Por favor ingresa tu nombre completo (entre 2 y 80 caracteres)." },
         { status: 400 }
       );
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
       return NextResponse.json(
-        { ok: false, error: "Ingresa un correo electrónico válido." },
+        { ok: false, error: "Por favor ingresa un correo electrónico válido." },
         { status: 400 }
       );
     }
@@ -35,26 +39,42 @@ export async function POST(request: Request) {
       );
     }
 
-    const destination = process.env.CONTACT_EMAIL || "fatima09mata@gmail.com";
+    if (!process.env.RESEND_API_KEY) {
+      console.error("[POST /api/contact] Falta RESEND_API_KEY en el entorno.");
+      return NextResponse.json(
+        { ok: false, error: "El servicio de correo no está configurado en el servidor." },
+        { status: 500 }
+      );
+    }
 
-    console.info("[POST /api/contact] Mensaje validado", {
-      destination,
-      fromName: name,
-      fromEmail: email,
-      hasResendKey: Boolean(process.env.RESEND_API_KEY),
-      at: new Date().toISOString(),
+    const toEmail = process.env.CONTACT_RECEIVER_EMAIL || "fatima09mata@gmail.com";
+
+    const { error } = await resend.emails.send({
+      from: "Portafolio Fátima Méndez <onboarding@resend.dev>",
+      to: [toEmail],
+      replyTo: email,
+      subject: `Nuevo mensaje del portafolio de ${name}`,
+      text: `Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`,
     });
+
+    if (error) {
+      console.error("[POST /api/contact] Error de Resend:", error);
+      return NextResponse.json(
+        { ok: false, error: "No se pudo enviar el correo en este momento." },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       {
         ok: true,
-        message: `Gracias, ${name}. Tu mensaje se envió correctamente.`,
+        message: `¡Gracias por escribir, ${name}! Tu mensaje ha sido enviado correctamente.`,
       },
       { status: 200 }
     );
   } catch {
     return NextResponse.json(
-      { ok: false, error: "Solicitud inválida o error interno del servidor." },
+      { ok: false, error: "Ocurrió un error al procesar la solicitud." },
       { status: 400 }
     );
   }

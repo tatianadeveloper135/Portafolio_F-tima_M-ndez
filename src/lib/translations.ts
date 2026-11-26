@@ -357,7 +357,7 @@ export const UI_TEXT = {
           format: "Video",
           title: "Educación formal para niñas rurales",
           summary:
-            "Este reportaje aborda mis logros desde la covertura de mi jornada, así como la iniciativa del Colegio Villanueva por parte de la Asocizción para la Promoción Humana (APROHU).",
+            "Este reportaje aborda mis logros desde la covertura de mi jornada, así como la iniciativa del Colegio Villanueva por parte de la Asociación para la Promoción Humana (APROHU).",
           url: "https://youtu.be/XW5H4EOIPP8?si=hank_cDH35jDWUmV",
         },
         {
