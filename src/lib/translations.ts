@@ -174,7 +174,7 @@ export const UI_TEXT = {
             { label: "Modalidad", value: "En equipo" },
           ],
           imagePath: "/images/evidencia-laberinto.png",
-          repoOrColabUrl: "#pegar-enlace-laberinto",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1adeEgMPEDm7OpK1Y_EHj-W9hxzLuFuk5?usp=sharing",
         },
         {
           id: "ai-challenge",
@@ -200,8 +200,8 @@ export const UI_TEXT = {
             { label: "Split", value: "75% / 25%" },
             { label: "k probados", value: "7 valores" },
           ],
-          imagePath: "/images/evidencia-ai-challenge.png",
-          repoOrColabUrl: "#pegar-enlace-colab-ai-challenge",
+          imagePath: "/images/proyecto-ai-challenge.png",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1E94ffS0F_Yeb0CLS9VVUqWjbCZSgeSxx",
         },
         {
           id: "hotspots-comerciales",
@@ -226,8 +226,8 @@ export const UI_TEXT = {
             { label: "Enfoque", value: "Hotspots" },
             { label: "Evidencia", value: "Código + Mapas" },
           ],
-          imagePath: "/images/evidencia-hotspots.png",
-          repoOrColabUrl: "#pegar-enlace-colab-hotspots",
+          imagePath: "/images/proyecto-hotspots.png",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1tVeElRUTjO-MpEzsCqt_BMwLxry2loB2?usp=sharing",
         },
         {
           id: "desarrollo-app-backend",
@@ -252,7 +252,6 @@ export const UI_TEXT = {
             { label: "Framework", value: "Next.js 14" },
             { label: "Deploy", value: "Vercel" },
           ],
-          imagePath: "/images/evidencia-web-api.png",
           repoOrColabUrl: "https://github.com/tatianadeveloper135/Portafolio_F-tima_M-ndez",
         },
       ] as ProjectItem[],
@@ -295,13 +294,10 @@ export const UI_TEXT = {
         },
       ] as SkillGroup[],
     },
-    // Dentro de UI_TEXT.es:
-
     education: {
       kicker: "05 · Trayectoria Académica",
       title: "Formación y Certificaciones",
       languages: "Español (Nativo) · Inglés (Intermedio – Avanzado / TOEIC)",
-      // Dentro de UI_TEXT.es.education.items:
       items: [
         {
           institution: "U.S. Space & Rocket Center · Huntsville, AL",
@@ -309,8 +305,8 @@ export const UI_TEXT = {
           period: "Experiencia Internacional",
           details:
             "Campamento avanzado de aproximadamente una semana en el Rocket Center en Huntsville, Alabama, desarrollando trabajo en equipo, liderazgo, resolución de retos y habilidades STEM.",
-          referenceUrl: "#pegar-enlace-space-camp",
-          referenceLabel: "Ver referencia / redes",
+          referenceUrl: "https://rocketcenter.com/aboutus/",
+          referenceLabel: "Ver referencia",
         },
         {
           institution: "Key Institute",
@@ -318,21 +314,27 @@ export const UI_TEXT = {
           period: "Admisión / Formación Universitaria",
           details:
             "Ingreso con beca del 90% para enfocarme en robótica, automatización, ingeniería y tecnología.",
-        },
+          referenceUrl: "https://www.keyinstitute.com/",
+          referenceLabel: "Ver referencia",
+          },
         {
           institution: "Colegio Villanueva",
           title: "Bachiller General",
           period: "2025 – 2026",
           details:
             "Formación académica integral y participación en proyectos científicos y tecnológicos.",
-        },
+          referenceUrl: "https://citalavillanueva.com/",
+          referenceLabel: "Ver referencia",
+          },
         {
           institution: "Programa ¡Supérate!",
           title: "Diplomado de 3 años en Inglés, Informática y Valores",
           period: "2023 – 2026",
           details:
             "Certificaciones internacionales: TOEIC Speaking & Writing, TOEIC Listening & Reading y Microsoft Excel Expert.",
-        },
+          referenceUrl: "https://citalavillanueva.com/",
+          referenceLabel: "Ver referencia",
+          },
         {
           institution: "Platzi & Junior Achievement El Salvador",
           title: "Formación Complementaria",
@@ -351,26 +353,26 @@ export const UI_TEXT = {
       items: [
         {
           id: "reportaje-1",
-          outlet: "Medio / Canal 1",
+          outlet: "Noticias 4 visión",
           format: "Video",
-          title: "Título del reportaje o entrevista en video",
+          title: "Educación formal para niñas rurales",
           summary:
-            "Breve descripción de qué se aborda en este video o cobertura.",
-          url: "#pegar-enlace-video-1",
+            "Este reportaje aborda mis logros desde la covertura de mi jornada, así como la iniciativa del Colegio Villanueva por parte de la Asocizción para la Promoción Humana (APROHU).",
+          url: "https://youtu.be/XW5H4EOIPP8?si=hank_cDH35jDWUmV",
         },
         {
           id: "reportaje-2",
-          outlet: "Medio / Periódico 2",
+          outlet: "Infobae Centroamerica",
           format: "Reportaje",
-          title: "Título de la nota o reportaje escrito",
+          title: "“Viví la experiencia de ser astronauta por una semana”: el viaje de una estudiante salvadoreña al Space Camp",
           summary:
-            "Breve resumen del reportaje sobre tus proyectos, becas o trayectoria.",
-          url: "#pegar-enlace-reportaje-2",
+            "En este reportaje se narra una de las experiencias más retadoras para mí: Participar en Space Camp.",
+          url: "https://www.infobae.com/el-salvador/2026/09/07/vivi-la-experiencia-de-ser-astronauta-por-una-semana-el-viaje-de-una-estudiante-salvadorena-al-space-camp/",
         },
       ] as MediaStoryItem[],
     },
     contact: {
-      kicker: "06 · Mensaje Directo",
+      kicker: "07 · Mensaje Directo",
       title: "Contacto",
       channelsTitle: "Canales",
       nameLabel: "Nombre",
@@ -388,7 +390,7 @@ export const UI_TEXT = {
   en: {
     nav: {
       inicio: "Home",
-      sobreMi: "About",
+      sobreMi: "About Me",
       experiencia: "Experience",
       proyectos: "Projects",
       habilidades: "Skills",
@@ -400,32 +402,32 @@ export const UI_TEXT = {
       badge: "Creative Lab · 10 Weeks",
       role: "Mechatronics & Robotics Engineering · AI, Algorithms & Web Development",
       tagline:
-        "Turning curiosity, logic, and purpose into technology solutions with real impact.",
+        "Turning curiosity, logic, and purpose into technology solutions with real-world impact.",
       ctaProjects: "View projects",
       ctaContact: "Contact",
       github: "GitHub",
       linkedin: "LinkedIn",
-      uploadPhotoPrefix: "Upload your photo to",
+      uploadPhotoPrefix: "Place your photo in",
     },
     about: {
       kicker: "01 · Identity",
       title: "About Me",
       whoTitle: "Who am I and what do I study?",
       whoAmI:
-        "I am Fátima Méndez, a high school graduate from Colegio Villanueva and alumna of the ¡Supérate! high-performance program. I love combining computational logic, robotics, data analysis, and web development to build useful solutions.",
+        "I am Fátima Méndez, a high school graduate from Colegio Villanueva and an alumna of the high-achievement ¡Supérate! program. I am passionate about combining computational logic, robotics, data analysis, and web development to build useful solutions.",
       whatIStudy:
-        "Incoming Mechatronics and Robotics Engineering student at Key Institute with a 90% partial scholarship, while strengthening technical English and programming.",
+        "Incoming Mechatronics and Robotics Engineering student at Key Institute with a 90% partial scholarship, while also strengthening my technical English and programming skills.",
       interests: [
         "Artificial Intelligence & Machine Learning",
         "Autonomous Robotics & Arduino",
         "Web Development with Next.js",
         "Youth Leadership & Service",
-        "Craft Entrepreneurship (CreArt)",
+        "Handcrafted Entrepreneurship (CreArt)",
       ],
       goalsTitle: "Goals and Strengths",
       personalLabel: "Personal Goal",
       personalGoal:
-        "Maintain a healthy balance among my faith, family, overall well-being, financial discipline, and community service.",
+        "Maintain a healthy balance among my faith, family, holistic well-being, financial discipline, and service to my community.",
       professionalLabel: "Professional Goal",
       professionalGoal:
         "Apply engineering and technology with ethics and creativity to solve real problems and inspire more young people in STEM.",
@@ -433,11 +435,11 @@ export const UI_TEXT = {
         "Approachable leadership and team organization",
         "Analytical thinking and problem solving",
         "Responsibility, perseverance, and empathy",
-        "Effective communication and teamwork under pressure",
+        "Effective communication and working under pressure",
       ],
     },
     experience: {
-      kicker: "02 · Experience",
+      kicker: "02 · Journey",
       title: "Experience, Projects & Leadership",
       items: [
         {
@@ -445,10 +447,10 @@ export const UI_TEXT = {
           organization: "AI Technology Project",
           period: "2025 – 2026",
           description:
-            "Led the development of a web application using artificial intelligence to identify and classify waste.",
+            "Led the development of an artificial intelligence web application to identify and classify waste.",
           achievements: [
-            "Built with TensorFlow.js, Google Maps, HTML, JavaScript, PHP, and MySQL.",
-            "Team coordination, task management, and technical problem solving.",
+            "Used TensorFlow.js, Google Maps, HTML, JavaScript, PHP, and MySQL.",
+            "Coordinated the team, managed tasks, and solved technical challenges.",
           ],
         },
         {
@@ -458,7 +460,7 @@ export const UI_TEXT = {
           description:
             "Built an autonomous Arduino vehicle capable of moving and detecting obstacles to simulate space exploration.",
           achievements: [
-            "Integrated ultrasonic sensors, servo motors, and Adafruit Motor Shield.",
+            "Integrated ultrasonic sensors, servo motors, and an Adafruit Motor Shield.",
             "Programmed obstacle detection and avoidance logic.",
           ],
         },
@@ -467,28 +469,28 @@ export const UI_TEXT = {
           organization: "Community Service & Liturgy",
           period: "Present",
           description:
-            "Youth mentoring, training activity planning, and community service.",
+            "Youth mentoring, planning formative activities, and community service.",
           achievements: [
             "Strengthened leadership, active listening, delegation, and teamwork.",
           ],
         },
         {
           role: "Founder · CreArt",
-          organization: "Craft Entrepreneurship",
+          organization: "Handcrafted Venture",
           period: "Ongoing",
           description:
             "Creation and sales of custom handmade products (keychains, crochet, accessories).",
           achievements: [
-            "Production management, digital promotion, customer care, and resource planning.",
+            "Managed production, digital promotion, customer service, and resource planning.",
           ],
         },
       ] as ExperienceItem[],
     },
     projects: {
       kicker: "03 · 10 Weeks",
-      title: "Projects & Required Activities",
+      title: "Projects & Mandatory Activities",
       subtitle:
-        "Open any project to review the problem, objective, solution, results, visual evidence, and Colab or GitHub link.",
+        "Open each project to review the problem, objective, solution, results, visual evidence, and link to Colab or GitHub.",
       allFilter: "All",
       categories: [
         "IA & Machine Learning",
@@ -500,28 +502,28 @@ export const UI_TEXT = {
       modalProblem: "Problem",
       modalObjective: "Objective",
       modalSolution: "Implemented solution",
-      modalResults: "Results achieved",
+      modalResults: "Key results",
       modalEvidenceNotePrefix: "Place your screenshot/chart in",
       modalOpenLink: "Open project link",
       items: [
         {
           id: "regresion-lineal",
-          title: "Linear Regression — Range-Validated Prediction",
+          title: "Linear Regression — Prediction with Range Validation",
           weekOrTag: "Activity 1 · Week 3",
           category: "IA & Machine Learning",
           shortDescription:
-            "Linear regression model over 30+ Study Hours and Score records, validating bounds before plotting and predicting.",
+            "Linear regression model on 30+ records of Study Hours and Score, validating limits before plotting and predicting.",
           problem:
             "Predict scores from study hours while avoiding estimates outside the range supported by the dataset.",
           objective:
-            "Build a dataset with at least 30 records (Study hours and Score), check if user input exceeds the dataset maximum, and show prediction + chart.",
+            "Create a dataset of at least 30 records (Study hours and Score), validate whether the user's input exceeds the dataset maximum, and display the prediction plus a chart.",
           technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Google Colab"],
           solutionExplanation:
-            "A dataset of 30+ study hours and score records was created. When a value is entered, it is compared against the dataset maximum: if higher, it notifies that it exceeds the available range; if within range, it computes the prediction and plots the regression line.",
+            "A dataset of at least 30 study-hours and score records was built. When a value is entered, it is compared against the dataset maximum: if it is higher, it notifies that it exceeds the available range; if it is within range, it computes the prediction and plots the regression line.",
           results: [
-            "Dataset of 30+ records configured with study hours and score variables.",
-            "Clear message when user input exceeds the maximum value in the dataset.",
-            "Visual chart of data points and fitted line for valid inputs.",
+            "Dataset with 30+ records configured with study hours and score variables.",
+            "Clear message when the entered value exceeds the dataset maximum.",
+            "Graphical visualization of data points and fitted line when the input is valid.",
           ],
           metrics: [
             { label: "Records", value: "30+ rows" },
@@ -529,7 +531,7 @@ export const UI_TEXT = {
             { label: "Check", value: "Max range" },
           ],
           imagePath: "/images/evidencia-regresion.png",
-          repoOrColabUrl: "#pegar-enlace-colab-regresion",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1WGbx73QgasdPT131Pd3wNyGoqukSnzKi?usp=sharing",
         },
         {
           id: "laberinto-python",
@@ -539,23 +541,23 @@ export const UI_TEXT = {
           shortDescription:
             "Interactive maze built as a team with Python and Pygame to find paths from start to goal.",
           problem:
-            "Design navigable environments with varying difficulty and solve valid paths from start to goal.",
+            "Design navigable environments of varying difficulty and find valid paths from a starting point to a goal.",
           objective:
-            "Apply programming, algorithmic logic, and libraries like Pygame and random as a team to build creative mazes with difficulty levels.",
+            "Apply programming, algorithmic logic, and libraries such as Pygame and random as a team to build creative mazes with difficulty levels.",
           technologies: ["Python", "Pygame", "Random", "Logic / Decision Trees"],
           solutionExplanation:
-            "Implemented a maze structure with difficulty levels, randomized elements, and path exploration logic from start to goal with visual rendering in Pygame.",
+            "A maze structure with different difficulty levels, randomized element generation, and path exploration logic from start to goal was implemented with visual rendering in Pygame.",
           results: [
-            "Playable, clear mazes with distinct difficulty levels.",
+            "Playable, visually clear mazes with distinct difficulty levels.",
             "Verified path from start to goal using algorithmic logic.",
           ],
           metrics: [
-            { label: "Visuals", value: "Pygame" },
+            { label: "Display", value: "Pygame" },
             { label: "Randomness", value: "random" },
-            { label: "Format", value: "Teamwork" },
+            { label: "Format", value: "Team project" },
           ],
           imagePath: "/images/evidencia-laberinto.png",
-          repoOrColabUrl: "#pegar-enlace-laberinto",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1adeEgMPEDm7OpK1Y_EHj-W9hxzLuFuk5?usp=sharing",
         },
         {
           id: "ai-challenge",
@@ -563,17 +565,17 @@ export const UI_TEXT = {
           weekOrTag: "Activity 3 · AI Challenge",
           category: "IA & Machine Learning",
           shortDescription:
-            "Clustering with K-Means (3 and 4 groups) and pass/fail prediction with KNN (75/25) evaluating k and scaling.",
+            "Clustering with K-Means (3 and 4 groups) and pass/fail prediction with KNN (75/25) evaluating k and normalization.",
           problem:
-            "Group students by study habits and predict pass/fail outcomes while analyzing the impact of feature scaling.",
+            "Group students by academic habits and predict pass/fail outcomes while analyzing the impact of feature scaling.",
           objective:
-            "Generate 500 students (study hours, attendance, assignments, grades), compare K-Means K=3 vs K=4, test KNN with k in [1,3,5,7,11,15,21], and evaluate 4h / 55% / 50%.",
+            "Generate 500 students (study hours, attendance, assignments, grades), compare K-Means K=3 vs. K=4, test KNN with k in [1,3,5,7,11,15,21], and evaluate the 4h / 55% / 50% case.",
           technologies: ["Python", "Google Colab", "K-Means", "KNN", "Scikit-learn"],
           solutionExplanation:
-            "Applied K-Means with 3 and 4 clusters on 500 records to interpret academic profiles. Split the dataset 75% train / 25% test for KNN across k values (1, 3, 5, 7, 11, 15, 21), comparing accuracy with and without scaling and diagnosing the 4h study, 55% attendance, and 50% assignments case.",
+            "K-Means with 3 and 4 clusters was applied to 500 records to interpret academic profiles. The dataset was then split 75% train / 25% test for KNN across k values (1, 3, 5, 7, 11, 15, 21), comparing accuracy with and without normalization and diagnosing the 4h study, 55% attendance, and 50% assignments profile.",
           results: [
             "Comparison of 3 vs. 4 K-Means clusters with interpretations and charts.",
-            "KNN accuracy analysis across k values and effect of unscaled features.",
+            "KNN accuracy analysis across k values and the effect of not normalizing data.",
             "Prediction and limitations explained for the 4h / 55% / 50% profile.",
           ],
           metrics: [
@@ -581,8 +583,8 @@ export const UI_TEXT = {
             { label: "Split", value: "75% / 25%" },
             { label: "k tested", value: "7 values" },
           ],
-          imagePath: "/images/evidencia-ai-challenge.png",
-          repoOrColabUrl: "#pegar-enlace-colab-ai-challenge",
+          imagePath: "/images/proyecto-ai-challenge.png",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1E94ffS0F_Yeb0CLS9VVUqWjbCZSgeSxx",
         },
         {
           id: "hotspots-comerciales",
@@ -590,25 +592,25 @@ export const UI_TEXT = {
           weekOrTag: "Activity 4 · Commercial Hotspots",
           category: "IA & Machine Learning",
           shortDescription:
-            "Identifying commercial hubs and zones using K-Means and KNN on geospatial data.",
+            "Identifying commercial zones and hubs by applying K-Means and KNN to geospatial data.",
           problem:
-            "Detect commercial concentrations and evaluate proximity/competition across target locations.",
+            "Detect commercial concentrations and evaluate proximity/competition at locations of interest.",
           objective:
-            "Implement and document the Commercial Hotspots solution with tools, results, source code, and evidence.",
+            "Implement and document the Commercial Hotspots solution along with its tools, results, source code, and evidence.",
           technologies: ["Python", "K-Means", "KNN", "Geospatial", "Google Colab"],
           solutionExplanation:
-            "Processed spatial business data to detect clusters (hotspots) with K-Means and evaluate point/location proximity with KNN, generating visualizations and practical insights.",
+            "Spatial data of establishments was processed to detect clusters (hotspots) with K-Means and evaluate proximity of points/locations with KNN, producing visualizations and practical takeaways.",
           results: [
             "Clear identification of commercial clusters/hotspots.",
-            "Proximity evaluation with KNN and supporting charts.",
+            "Neighborhood evaluation with KNN and supporting visualizations.",
           ],
           metrics: [
             { label: "Models", value: "K-Means + KNN" },
             { label: "Focus", value: "Hotspots" },
             { label: "Evidence", value: "Code + Maps" },
           ],
-          imagePath: "/images/evidencia-hotspots.png",
-          repoOrColabUrl: "#pegar-enlace-colab-hotspots",
+          imagePath: "/images/proyecto-hotspots.png",
+          repoOrColabUrl: "https://colab.research.google.com/drive/1tVeElRUTjO-MpEzsCqt_BMwLxry2loB2?usp=sharing",
         },
         {
           id: "desarrollo-app-backend",
@@ -616,24 +618,23 @@ export const UI_TEXT = {
           weekOrTag: "Web Architecture · 10 Weeks",
           category: "Robótica & Web",
           shortDescription:
-            "Next.js 14, TypeScript, and Tailwind CSS frontend connected to POST /api/contact with validation and Vercel deployment.",
+            "Frontend in Next.js 14, TypeScript, and Tailwind CSS connected to POST /api/contact with validation and Vercel deployment.",
           problem:
-            "Present the term's evidence cleanly and securely, including a validated form backed by a REST API.",
+            "Present period evidence in a structured, secure way and include a validated contact form backed by a REST API.",
           objective:
-            "Structure React/TypeScript components, implement POST /api/contact with validation and JSON responses, protect environment variables, and deploy to Vercel.",
+            "Organize React/TypeScript components, implement POST /api/contact with validation and JSON responses, protect environment variables, and publish on Vercel.",
           technologies: ["Next.js 14", "React", "TypeScript", "Tailwind CSS", "REST API", "Vercel"],
           solutionExplanation:
-            "Organized routes in src/app, components in src/components, and data in src/data. The src/app/api/contact/route.ts endpoint validates name, email, and message, returns JSON with proper HTTP status codes, and uses environment variables without exposing secrets.",
+            "The app was structured with routes in src/app, components in src/components, and data in src/data. The src/app/api/contact/route.ts endpoint validates name, email, and message, returns JSON responses with appropriate HTTP status codes, and uses environment variables without exposing secrets.",
           results: [
             "Working POST /api/contact endpoint with validation and success/error feedback.",
-            "Responsive layout and continuous deployment from GitHub to Vercel.",
+            "Responsive design and continuous deployment from GitHub to Vercel.",
           ],
           metrics: [
             { label: "Endpoint", value: "POST /api/contact" },
             { label: "Framework", value: "Next.js 14" },
             { label: "Deploy", value: "Vercel" },
           ],
-          imagePath: "/images/evidencia-web-api.png",
           repoOrColabUrl: "https://github.com/tatianadeveloper135/Portafolio_F-tima_M-ndez",
         },
       ] as ProjectItem[],
@@ -643,11 +644,11 @@ export const UI_TEXT = {
       title: "Skills",
       groups: [
         {
-          category: "Programming Languages",
+          category: "Programming languages",
           items: ["Python", "TypeScript", "JavaScript", "C++ (Arduino)", "PHP", "SQL"],
         },
         {
-          category: "Web Development",
+          category: "Web development",
           items: ["Next.js 14", "React", "Tailwind CSS", "HTML5", "CSS3", "REST API"],
         },
         {
@@ -655,28 +656,27 @@ export const UI_TEXT = {
           items: ["MySQL", "CSV / JSON Datasets"],
         },
         {
-          category: "Tech Tools",
+          category: "Tech tools",
           items: ["Git", "GitHub", "Vercel", "Google Colab", "Arduino", "Excel Expert"],
         },
         {
-          category: "AI & Machine Learning",
+          category: "Artificial intelligence & Machine Learning",
           items: ["Linear Regression", "K-Means", "KNN", "Scikit-learn", "Pandas", "TensorFlow.js"],
         },
         {
-          category: "Soft Skills",
+          category: "Soft skills",
           items: [
             "Leadership",
             "Responsibility",
             "Proactivity",
             "Empathy",
-            "Critical Thinking",
+            "Critical thinking",
             "Teamwork",
-            "Effective Communication",
+            "Effective communication",
           ],
         },
       ] as SkillGroup[],
     },
-    // Dentro de UI_TEXT.en:
     education: {
       kicker: "05 · Academic Background",
       title: "Education & Certifications",
@@ -688,8 +688,8 @@ export const UI_TEXT = {
           period: "International Experience",
           details:
             "Approximately one-week advanced camp at the Rocket Center in Huntsville, Alabama, developing teamwork, leadership, problem solving, and STEM skills.",
-          referenceUrl: "#pegar-enlace-space-camp",
-          referenceLabel: "View reference / social channels",
+          referenceUrl: "https://rocketcenter.com/aboutus/",
+          referenceLabel: "View reference",
         },
         {
           institution: "Key Institute",
@@ -697,6 +697,8 @@ export const UI_TEXT = {
           period: "Admission / University Studies",
           details:
             "Admitted with a 90% scholarship to focus on robotics, automation, engineering, and technology.",
+          referenceUrl: "https://www.keyinstitute.com/",
+          referenceLabel: "View reference",
         },
         {
           institution: "Colegio Villanueva",
@@ -704,6 +706,8 @@ export const UI_TEXT = {
           period: "2025 – 2026",
           details:
             "Comprehensive academic training and participation in science and technology projects.",
+          referenceUrl: "https://citalavillanueva.com/",
+          referenceLabel: "View reference",
         },
         {
           institution: "Programa ¡Supérate!",
@@ -711,6 +715,8 @@ export const UI_TEXT = {
           period: "2023 – 2026",
           details:
             "International certifications: TOEIC Speaking & Writing, TOEIC Listening & Reading, and Microsoft Excel Expert.",
+          referenceUrl: "https://citalavillanueva.com/",
+          referenceLabel: "View reference",
         },
         {
           institution: "Platzi & Junior Achievement El Salvador",
@@ -730,26 +736,26 @@ export const UI_TEXT = {
       items: [
         {
           id: "reportaje-1",
-          outlet: "Media Outlet 1",
+          outlet: "Noticias 4 visión",
           format: "Video",
-          title: "Video feature or interview title",
+          title: "Educación formal para niñas rurales",
           summary:
-            "Short summary of what this video or media coverage highlights.",
-          url: "#pegar-enlace-video-1",
+            "This feature covers my achievements through my daily routine as well as Colegio Villanueva's initiative led by the Association for Human Promotion (APROHU).",
+          url: "https://youtu.be/XW5H4EOIPP8?si=hank_cDH35jDWUmV",
         },
         {
           id: "reportaje-2",
-          outlet: "Media Outlet 2",
+          outlet: "Infobae Centroamerica",
           format: "Reportaje",
-          title: "Written article or feature title",
+          title: "“Viví la experiencia de ser astronauta por una semana”: el viaje de una estudiante salvadoreña al Space Camp",
           summary:
-            "Short summary of the feature covering your projects, scholarships, or journey.",
-          url: "#pegar-enlace-reportaje-2",
+            "This feature shares one of my most challenging experiences: participating in Space Camp.",
+          url: "https://www.infobae.com/el-salvador/2026/09/07/vivi-la-experiencia-de-ser-astronauta-por-una-semana-el-viaje-de-una-estudiante-salvadorena-al-space-camp/",
         },
       ] as MediaStoryItem[],
     },
     contact: {
-      kicker: "06 · Direct Message",
+      kicker: "07 · Direct Message",
       title: "Contact",
       channelsTitle: "Channels",
       nameLabel: "Name",
@@ -764,4 +770,4 @@ export const UI_TEXT = {
       line2: "Santa Tecla, La Libertad, El Salvador · Next.js 14, TypeScript & Tailwind CSS",
     },
   },
-} as const;
+}

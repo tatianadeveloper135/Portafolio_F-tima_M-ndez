@@ -25,7 +25,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: "Variables", value: "Horas / Score" },
       { label: "Control", value: "Rango máx." },
     ],
-    imagePath: "/images/evidencia-regresion.jpeg",
+    imagePath: "/images/evidencia-regresion.png",
     repoOrColabUrl: "https://colab.research.google.com/drive/1WGbx73QgasdPT131Pd3wNyGoqukSnzKi?usp=sharing",
   },
   {
@@ -52,7 +52,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       { label: "Modalidad", value: "En equipo" },
     ],
     imagePath: "/images/evidencia-laberinto.png",
-    repoOrColabUrl: "#pegar-enlace-laberinto",
+    repoOrColabUrl: "https://colab.research.google.com/drive/1adeEgMPEDm7OpK1Y_EHj-W9hxzLuFuk5?usp=sharing",
   },
   {
     id: "ai-challenge",
