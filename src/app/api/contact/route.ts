@@ -47,7 +47,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const toEmail = process.env.CONTACT_RECEIVER_EMAIL || "fatima09mata@gmail.com";
+    const toEmail = process.env.CONTACT_EMAIL || "fatima09mata@gmail.com";
 
     const { error } = await resend.emails.send({
       from: "Portafolio Fátima Méndez <onboarding@resend.dev>",
